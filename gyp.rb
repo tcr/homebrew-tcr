@@ -10,12 +10,8 @@ class Gyp < Formula
 
      # initialize the installation of this
      def install
-
-             # intialize setup arguments for python
-             install_args = ["setup.py", "install"]
-
              # use the brew python to install the tools needed
-             system 'python', *install_args
+	     system 'python', 'setup.py', 'install'
 
              # install the gyp executable
              bin.install("gyp")
