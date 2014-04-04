@@ -6,7 +6,7 @@ class GccArm < Formula
   sha1 "b40c4127f641170f016b77ad423caf8dfd46faac"
 
   def install
-    bin.install Dir['bin/*']
+    prefix.install Dir["*"]
   end
 
   test do
